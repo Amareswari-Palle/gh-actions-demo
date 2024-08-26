@@ -1,0 +1,14 @@
+name: Multiple shell commands
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print Greeting
+        run: echo "Hello Bujji!"
+      - name: Print Below steps
+        run: |
+          echo "Hey Bujji!"
+          echo "what are you doing?"
+          echo "I am doing work 
+        
